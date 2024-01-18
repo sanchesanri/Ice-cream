@@ -1,0 +1,125 @@
+.reviews {
+  padding-top: 100px;
+  background-color: var(--white-color);
+
+  owl-carousel .owl-item img {
+    display: block;
+    width: 17%;
+    float: left;
+    border: 5px solid var(--white-color);
+    border-radius: 20px;
+    margin-left: 54px;
+    margin-right: 35px;
+    margin-top: 15px;
+  }
+  .reviews__item.equal-height.style-6 {
+    height: 450px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    margin: 10px;
+    @media screen and (max-width: $pre-tablet) {
+      padding: 40px;
+    }
+    @media screen and (min-width: $tablet) {
+      height: 400px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 350px;
+    }
+  }
+
+  .reviews__image {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-color);
+    margin-bottom: 40px;
+  }
+  .reviews__title {
+    text-align: center;
+    &::before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 32px;
+      height: 4px;
+
+      background-image: url('/images/reviews/reviews-dots.svg');
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+  .reviews__text {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(31 / 12);
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    background-image: linear-gradient(
+      0deg,
+      #e1e1e1 1.61%,
+      transparent 1.61%,
+      transparent 50%,
+      #e1e1e1 50%,
+      #e1e1e1 51.61%,
+      transparent 51.61%,
+      transparent 100%
+    );
+    background-size: 60px 60px;
+
+    z-index: 1;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: calc(31 / 14);
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: calc(31 / 16);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: -14px;
+      left: 10px;
+      width: 54px;
+      height: 40px;
+
+      background-image: url('/images/reviews/reviews-brackets.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      z-index: -1;
+
+      @media screen and (min-width: 480px) {
+        // left: -20px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: calc(30 / 14);
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 0 20px;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+    }
+  }
+
+  #main-content .container {
+    padding-top: 10px;
+  }
+  i.fa.fa-quote-left {
+    padding: 0px 10px;
+    color: white;
+  }
+}
