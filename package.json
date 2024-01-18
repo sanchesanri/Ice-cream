@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/Savranskyi/ice-cream",
+  "homepage": "https://github.com/sanchesanri/commanding-pr-Ice-cream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-cream/"
+    "build": "parcel build src/*.html --public-url /commanding-pr-Ice-cream/"
   },
   "repository": {
     "type": "git",
